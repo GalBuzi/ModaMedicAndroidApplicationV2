@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="View.MainActivity">
+
+
+    <Button
+        android:id="@+id/send"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/custom_system_button"
+        android:backgroundTintMode="src_in"
+        android:onClick="loginFunction"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/register_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/custom_system_button"
+        android:backgroundTintMode="src_in"
+        android:onClick="registerFunction"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username_textfield"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="214dp"
+            android:ems="10"
+            android:hint="@string/id"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:shadowColor="@color/colorAccent"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorLink="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/password_textfield"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="277dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:gravity="center"
+            android:inputType="textPassword"
+            app:passwordToggleEnabled="true"
+            android:shadowColor="@color/colorAccent"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorLink="@color/colorAccent" />
+
+        <ImageButton
+            android:id="@+id/passwordShow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/password_textfield"
+            android:layout_marginTop="285dp"
+            android:background="@drawable/show_password"
+            android:onClick="changePasswordTF"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/app_logo" />
+
+    <Button
+        android:id="@+id/forgot_password_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_system_button"
+        android:onClick="forgetPasswordFunction"
+        android:text="@string/forgot_password" />
+
+    <CheckBox
+        android:id="@+id/RememberMeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="327dp"
+        android:gravity="center"
+        android:text="@string/remember_me"
+        android:checked="true"/>
+
+</RelativeLayout>
