@@ -23,6 +23,7 @@ import Model.Users.Settings;
 import Model.Users.User;
 import Model.Utils.HttpRequests;
 
+//shay_check_commit
 public class AppController {
 
     private static AppController appController;
